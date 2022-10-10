@@ -1,0 +1,39 @@
+Memento:
+- multiple files, same function name (main)
+
+0)
+gcc hello.c
+// obs: genereaza executabilul numit a.out, numele default de executabil
+
+1)
+gcc hello.c -o hello
+
+2)
+// utilizam biblioteca math
+gcc hello.c -o hello -lm
+
+3)
+// one exe, two source files
+gcc hello1.c hello2.c -o hello
+
+4)
+// -c compileaza si asambleaza, dar nu link-editeaza
+// output: fisiere .o obj
+gcc -c hello.c -o hello.o
+
+5)
+// same, but using 2 files
+gcc -c hello1.c hello2.c -o hello.o
+// memento: de facut un hexdump
+
+6)
+gcc hello1.c hello2.o -o hello -lm
+
+7)
+// se opreste dupa faza de compilare, fara sa asambleze, output: cod .asm
+gcc -S hello.c -o hello.s
+
+8)
+// se opreste dupa faza de preprocesoare, fara sa compileze, output: cod .c
+gcc -E hello.c -o hello_pre.c
+
