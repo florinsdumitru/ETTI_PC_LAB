@@ -1,0 +1,4 @@
+$^ is the list of source files
+
+$@ is the output file
+

@@ -1,5 +1,5 @@
 hello: byebye.c
-	gcc byebye.c -o hello
+	gcc $^ -o $@
 
 .PHONY: clean
 clean:
