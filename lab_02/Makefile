@@ -1,4 +1,4 @@
-hello: byebye.c
+hello: byebye.c hello.c
 	gcc $^ -o $@
 
 .PHONY: clean
