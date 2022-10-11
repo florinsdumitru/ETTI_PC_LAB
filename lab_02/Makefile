@@ -1,4 +1,6 @@
-prog: source1.o source2.o source3.o
+OBJ_FILES=source1.o source2.o source3.o
+
+prog: $(OBJ_FILES)
 	gcc $^ -o $@
 
 %.o: %.c
@@ -6,4 +8,4 @@ prog: source1.o source2.o source3.o
 
 .PHONY: clean
 clean:
-	rm -f prog *.o
+	rm -f prog $(OBJ_FILES)
