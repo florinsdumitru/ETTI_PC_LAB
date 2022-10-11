@@ -1,4 +1,4 @@
-SOURCE_FILES= source1.c source2.c source3.c
+SOURCE_FILES=$(shell find -name '*.c')
 OBJ_FILES=$(SOURCE_FILES:.c=.o)
 
 prog: $(OBJ_FILES)
