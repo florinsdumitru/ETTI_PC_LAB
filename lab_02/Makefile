@@ -1,4 +1,5 @@
-OBJ_FILES=source1.o source2.o source3.o
+SOURCE_FILES= source1.c source2.c source3.c
+OBJ_FILES=$(SOURCE_FILES:.c=.o)
 
 prog: $(OBJ_FILES)
 	gcc $^ -o $@
