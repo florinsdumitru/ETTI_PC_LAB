@@ -1,0 +1,30 @@
+// original 
+if (doesSignificantWork) {
+    if (makesBreakthrough)
+        nobelPrizeCandidate = true;
+    else
+        nobelPrizeCandidate = false;
+}
+else if (!doesSignificantWork) {
+    nobelPrizeCandidate = false;
+}
+
+// step 1
+if (doesSignificantWork) {
+    if (makesBreakthrough)
+        nobelPrizeCandidate = true;
+    else
+        nobelPrizeCandidate = false;
+} else {
+    nobelPrizeCandidate = false;
+}
+
+// step 2
+if (makesBreakthrough && doesSignificantWork) {
+    nobelPrizeCandidate = true;
+} else {
+    nobelPrizeCandidate = false;
+}
+
+
+
