@@ -1,0 +1,10 @@
+De facut demo cu:
+git init
+git add
+git commit
+git log --oneline
+git commit --amend
+git status
+git show
+git diff
+
