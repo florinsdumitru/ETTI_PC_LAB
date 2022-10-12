@@ -1,0 +1,4 @@
+1. nu uitati de caracterul care semnaleaza finalul unui string, acesta trebuie si el sa fie stocat undeva, corect?
+2. numele unei functii *nu* include si parantezele
+3. numele headerelor *include si* extensia .h
+
