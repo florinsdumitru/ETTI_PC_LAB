@@ -1,0 +1,4 @@
+- scanf returneaza numarul de parametri scanati cu succes
+- este obligatoriu ca orice cale de executie sa aiba un return daca functia nu e de tip void
+- codul de dupa return este 'dead code', nu se poate executa
+
