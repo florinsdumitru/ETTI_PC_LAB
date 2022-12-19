@@ -1,0 +1,35 @@
+1.
+Daniel a ajuns în staţia RATB de la Leu. Vrea să ajungă la Universitate cât mai repede cu un troleibuz sau un autobuz. Dacă are de ales între un troleibuz şi un autobuz care ajung la fel de repede la destinaţie, va prefera troleibuzul. Din fericire, pe tabela electronică din staţie sunt afişate ora curentă şi suficiente informaţiidespre mijloacele de transport în comunpentru ca el să poată alege:
+
+<HH>:<MM>
+<Numărul de mijloace de transport ce deservesc ruta Leu – Universitate>
+<Tip mijloc transport>
+<Număr>
+<Timp aşteptare [minute]>
+<Durată călătorie [minute]>
+<Tip mijloc transport>
+<Număr>
+<Timp aşteptare [minute]>
+<Durată călătorie [minute]>
+...
+<Tip mijloc transport>
+<Număr>
+<Timp aşteptare [minute]>
+<Durată călătorie [minute]>
+
+
+Stabiliţi ce mijloc de transport în comun va alege Daniel şi la ce oră va ajunge la Universitate.
+
+Se vor citi de la tastatură:
+Ora curentă în formatul <HH>:<MM>, unde HH este un număr întreg în intervalul 0 – 23 şi MM este un număr întreg în intervalul 0 – 59, urmată de caracterul newline
+Un număr întreg N, în intervalul 1–100, reprezentând numărul de mijloace de transport ce deservesc ruta Leu–Universitate, urmat de caracterul newline
+N linii în formatul <TMT> <NR> <TA> <DC>, unde
+TMT este un caracter: T (troleibuz) sau A (autobuz), reprezentând tipul mijlocului de transport;
+NR este un număr întreg în intervalul 0–999, reprezentând numărul mijlocului de transport;
+TA este un număr întreg în intervalul 0–59, reprezentând timpul de aşteptare în minute;
+DC este un număr întreg în intervalul 0–59, reprezentând durata călătoriei în minute.
+Programul va afişa pe ecran tipul, numărul mijlocului de transport ales de Daniel şi ora la care va ajunge la Universitate, în următorul format: <TMT> <NR> <HH>:<MM>
+
+HH şi MM sunt reprezentate fiecare cu 2 cifre, indiferent de valoarea lor (de exemplu ora nouă şi cinci minute va fi reprezentată 09:05).
+
+For example:

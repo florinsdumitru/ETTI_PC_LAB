@@ -1,0 +1,14 @@
+2.
+Scrieți un program care să citească de la tastatură un număr n întreg și apoi numele și CNP-ul a n persoane. Informațiile pentru fiecare persoană se află la intrare pe câte o linie separată. Numele și CNP-ul sunt separate prin virgulă. Numele este complet (adică unul sau mai multe prenume urmat de un nume). Dimensiunea maximă pentru un nume este de 255 de caractere.
+
+Să se afișeze doar numele celor născuti in 1994 separate prin virgulă. Pentru ușurință, se va adăuga o virgulă și după ultimul nume.
+
+Utilizați următoarele structuri:
+
+Person cu membrii name și cnp (de tip struct Cnp).
+Cnp cu membrii gender, birthday, birthmonth, birthyear și suffix.
+Scrieți o funcție readPerson care să citească de la tastatură informațiile necesare și să întoarcă o valoare de tip struct Person.
+
+Scrieți o funcție isBornIn1994 care să ia ca argument o variabilă de tip Person și să întoarcă 1 dacă persoana e născută în 1994 și 0 dacă nu.
+
+For example:

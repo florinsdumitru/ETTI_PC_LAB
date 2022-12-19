@@ -1,0 +1,29 @@
+4.
+În anul I de facultate, cea mai dificilă materie este FIZICA 1. Examenul a fost greu și mulți studenți urmau să întâlnească profesorul din nou în toamnă, la sesiunea de restanțe. Totuși, spre norocul studenților, profesorul a primit un telefon de la loteria română, fiind anunțat că este marele câștigător al extragerii loteriei bonurilor cu premiul în valoare de 50000 de Euro și a decis să fie mai indulgent în notare. Nota finală la fizica se va calcula ca parte întreagă din media aritmetică a notelor (tip întreg) de la seminar,  laborator, parțial și examen final. Algoritmul de rotunjire pe care l-a aplicat domnul profesor a fost :
+
+Dacă nota era mai mică de 38, nu se aplică nicio rotunjire.
+Dacă diferența dintre nota curentă și următorul multiplu de 5 este mai mică decât 3, nota se rotunjește la valoarea următorului multiplu de 5, altfel rămâne neschimbată.
+Cerință
+Să se scrie un program în C care să afișeze numele studenților și starea lor (dacă au picat sau au trecut).
+
+Se va folosi structura:
+
+enum StudentState {
+    FAILED,
+    PASS,
+    NONE = -1
+};
+Starea studentului este:
+
+FAILED (picat dacă media după rotunjirea notelor este strict mai mică decât 50)
+PASS (trecut dacă media după rotunjirea notelor este mai mare sau egală cu 50)
+Initial statusul studentilor este NONE.
+Se va defini un tip de date nou Student folosind struct care va conține și starea de tipul enum definit mai sus.
+Date de intrare
+Pe prima linie N număr întreg ce reprezintă numărul de studenți. Pe următoarele N linii sunt introduși studenții cu nume și notele lor:  nume_student,nota_sem nota_lab nota_partial nota_final
+
+Date de ieșire
+Numele studenților, cu specificația dacă au trecut sau au picat. 
+
+OBS:
+Dacă nota curentă e 33, următorul multiplu de 5 e 35.

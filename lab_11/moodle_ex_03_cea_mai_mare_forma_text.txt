@@ -1,0 +1,29 @@
+3.
+Este săptămâna formelor geometrice la grădiniţă. Astăzi copiii au învăţat să deseneze pătrate, dreptunghiuri şi cercuri. Bineînţeles că apare competiţia: cine poate desena cea mai mare formă geometrică? Doamna educatoare este arbitrul şi trebuie să stabilească cine este câştigătorul. O puteţi ajuta?
+
+Cerinţă
+Stabiliţi cine a desenat forma geometrică cea mai mare (cea care are suprafaţa cea mai mare).
+
+Date de intrare
+Se vor citi de la tastatură (fluxul stdin) următoarele date:
+o valoare întreagă N reprezentând numărul de forme geometrice intrate în competiţie, urmată de caracterul newline (tasta Enter);
+N linii, fiecare linie conţinând numele formei geometrice („patrat”, „dreptunghi”, „cerc”) şi informaţiile despre aceasta (lungimea laturii pentru pătrate, lungimile laturilor pentru dreptunghiuri, raza cercului pentru cercuri), în următorul format:
+patrat <L>
+dreptunghi <L1>  <L2>
+cerc <R>
+Entităţile componente ale liniilor sunt separate printr-un spaţiu, ca în exemplul dat în final. Fiecare dintre cele N linii reprezentând rezultate este urmată de caracterul newline (tasta Enter).
+
+Date de ieşire
+Programul va afişa pe ecran (stream-ul standard de ieşire) informaţiile despre forma cea mai mare în acelaşi format în care au fost introduse şi datele de intrare (se va afişa exact linia citită de la intrare).
+
+Restricţii şi precizări
+Numărul de forme geometrice, N, este un număr întreg între 1 şi 100.
+
+Denumirea formelor geometrice va fi („patrat”, „dreptunghi” sau „cerc”).
+
+Lungimile laturilor şi razele sunt numere reale, între 0 şi 1000, cu exact 2 zecimale.
+
+Suprafaţa formelor geometrice este: Spatrat = L2, Sdreptunghi = L1 * L2, Scerc ~ 3.14 * R2.
+
+Se garantează faptul că nu vor exista două forme geometrice cu suprafaţă maximă.
+

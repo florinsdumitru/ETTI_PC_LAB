@@ -1,0 +1,6 @@
+5.
+Se citește de la intrare un număr n întreg, și apoi un fișier în format CSV (Comma Separated Values) de n linii. Pe fiecare linie se află un nume (de maxim 255 de caractere), o data de naștere, în format zz-ll-aaaa, și o sumă de bani (salariu).
+
+Să se afișeze liniile în ordinea inversă în care s-au citit, și în loc de virgulă noul separator să fie caracterul tab (\t) și salariul cu două zecimale.
+
+Folosiți o structură Employee cu membrii name, birthday și salary.
