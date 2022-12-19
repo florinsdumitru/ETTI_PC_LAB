@@ -1,0 +1,3 @@
+- care este sintaxa pentru operatorul ternar?
+- cand spunem ca o functie este recursiva?
+- ce trebuie sa aiba orice functie recursiva (ce rol joaca acel if)?
