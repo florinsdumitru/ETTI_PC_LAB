@@ -1,0 +1,48 @@
+#include <stdio.h>
+#include <stdint.h>
+#include <stdlib.h>
+
+struct Product {
+    char name[128];
+    uint64_t code;
+    double price;
+    uint32_t stock;
+};
+
+double buyProduct(struct Product * product, uint32_t count) {
+    if(product->stock < count) return 0.0;
+    product->stock -= count;
+    return count * product->price;
+}
+
+struct Product * findProduct(uint64_t code, struct Product * allProducts, uint32_t productCount) {
+    for(struct Product * current = allProducts; current < allProducts + productCount; current++) {
+        if(current->code == code) return current;
+    }
+    return NULL;
+}
+
+struct Product * readData(uint32_t count) {
+    struct Product * allProducts = (struct Product*) malloc(count * sizeof(struct Product));
+    for(uint32_t i = 0; i < count; i++) {
+        scanf("%s%lu%lf%u", allProducts[i].name, &allProducts[i].code, &allProducts[i].price, &allProducts[i].stock);
+    }
+    return allProducts;
+}
+
+int main() {
+    uint32_t productCount;
+    scanf("%u", &productCount);
+    struct Product * allProducts = readData(productCount);
+    uint64_t codeToBuy;
+    uint32_t itemsToBuy;
+    double priceToPay = 0;
+    while(scanf("%lu%u", &codeToBuy, &itemsToBuy) != EOF) {
+        struct Product * productToBuy = findProduct(codeToBuy, allProducts, productCount);
+        if(productToBuy == NULL) continue;
+        priceToPay += buyProduct(productToBuy, itemsToBuy);
+    }
+    free(allProducts);
+    printf("%.2lf", priceToPay);
+    return 0;
+}

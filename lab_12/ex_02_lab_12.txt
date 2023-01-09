@@ -1,0 +1,4 @@
+// ex 02 lab 12 - enunt
+Realizați o funcție char * allocateString(unsigned size) care să aloce în HEAP o zonă de memorie care să poată stoca un sir de caractere de dimensiunea size, să citească un cuvânt de la tastatură în zona respectivă de memorie și să întoarcă adresa alocată.
+
+ATENȚIE: nu uitați de caracterul pentru final de șir.

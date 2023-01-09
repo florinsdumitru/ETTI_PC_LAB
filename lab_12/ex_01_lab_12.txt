@@ -1,0 +1,2 @@
+// ex 01 lab 12 - enunt
+Scrieți o funcție  void countChars(char * string, unsigned * lowercase, unsigned * uppercase, unsigned * digits, unsigned * otherChars) care să numere caracterele de diferite tipuri (litere mici, mari, cifre și alte caractere) din șirul de caractere dat (string) și să scrie aceste valori la adresele primite ca argumente.

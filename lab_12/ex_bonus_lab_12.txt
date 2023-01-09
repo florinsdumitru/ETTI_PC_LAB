@@ -1,0 +1,45 @@
+Căutați și eliminați pierderile de memorie (memory leaks) din codul dat. Puteți copia programul și îl puteți rula cu valgrind direct pe calculator. Vezi tutorialul din laboratorul 12.
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#define BUFFER_SIZE 100
+
+struct Buffer {
+    unsigned size;
+    char * string;
+};
+
+struct Buffer * createBuffer(unsigned size) {
+    struct Buffer * newBuffer = (struct Buffer*) malloc (sizeof(struct Buffer));
+    newBuffer->size = size;
+    newBuffer->string = (char*) malloc(size * sizeof(char));
+    return newBuffer;
+}
+
+struct Buffer * reverseWord(struct Buffer * buffer) {
+    struct Buffer * newBuffer = createBuffer(buffer->size);
+    int i;
+    for(i = 0; i < strlen(buffer->string); i++) {
+        *(newBuffer->string + i) = buffer->string[strlen(buffer->string) - 1 - i];
+    }
+    newBuffer->string[strlen(buffer->string)] = '\0';
+    return newBuffer;
+}
+
+int main() {
+    unsigned wordCount;
+    printf("How many words? ");
+    scanf("%u", &wordCount);
+
+    unsigned i;
+    for(i = 0; i < wordCount; i++) {
+        struct Buffer * buffer = createBuffer(BUFFER_SIZE);
+        scanf("%s", buffer->string);
+        buffer = reverseWord(buffer);
+        printf("Reversed is: %s\n", buffer->string);
+        free(buffer);
+    }
+    return 0;
+}

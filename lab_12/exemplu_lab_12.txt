@@ -1,0 +1,20 @@
+Se dă o structură 
+
+struct Product {
+    char name[128];
+    uint64_t code;
+    double price;
+    uint32_t stock;
+};
+ce stochează date despre un produs dintr-un magazin. 
+
+Scrieți o funcție buyProduct care ia ca argument un pointer la un struct Product, și un număr de produse ce sunt cumpărate, decrementează stocul cu acea valoarea (dacă există suficiente produse în stoc), și întoarce suma totală de plată. Dacă nu există destule produse în stoc, va întoarce 0.
+Scrieți o funcție findProduct care ia ca argument un cod de produs împreună cu pointerul unde sunt stocate toate produsele și numărul lor, și întoarce un pointer la adresa de memorie unde este stocată variabila de tip struct Product asociată produsului respectiv. Dacă produsul nu este găsit, va întoarce NULL. Dacă apare de mai multe ori, se va întoarce prima adresă găsită.
+Scrieți o funcție readData care să ia ca argument un număr de produse și apoi să citească de la tastatură informații referitoare la produsele respective, în formatul:
+
+<nume> <cod> <pret> <stoc>
+
+cu câte un produs pe linie. Pentru că numărul de produse este foarte mare, memoria trebuie alocată în HEAP. Funcția trebuie să întoarcă adresa de început a zonei de memorie unde s-a realizat citirea.
+Scrieți apoi în funcția main un program care să citească întâi datele despre produse, apoi perechi de <cod> <cantitate>, până la EOF, reprezentând produsele ce trebuie cumpărate. Programul va afișa suma totală de plată, cu două zecimale.
+
+

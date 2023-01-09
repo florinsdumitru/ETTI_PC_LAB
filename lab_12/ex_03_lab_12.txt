@@ -1,0 +1,4 @@
+// ex 03 lab 12 - enunt
+Ați fost angajați de NSA pentru a căuta în textele online diferite cuvinte care ar putea semnala pericole cibernetice. Pe prima linie la intrare se dă un cuvânt (secvență de caractere fără whitespace). Pe a doua linie este un text de cel mult 10240 de caractere. Să se caute cuvântul în acest text și să se afișeze de câte ori apare. Atenție, trebuie numărate și aparițiile din interiorul altor cuvinte.
+
+Puteți folosi funcția strstr din header-ul string.h.
